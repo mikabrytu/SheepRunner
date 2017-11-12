@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed;
 	public float jumpForce;
+	public float aceleration;
 	public LayerMask groundLayer;
 
 	private bool grounded;
@@ -20,11 +21,14 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		print (speed);
 		grounded = Physics2D.IsTouchingLayers (playerCollider, groundLayer);
 		playerBody.velocity = new Vector2 (speed, playerBody.velocity.y);
 
 		if ((Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0)) && grounded) {
 			playerBody.velocity = new Vector2(playerBody.velocity.x, jumpForce);
 		}
+
+		speed += aceleration;
 	}
 }

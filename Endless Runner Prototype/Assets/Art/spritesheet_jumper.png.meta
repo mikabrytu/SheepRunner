@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cebb099a6045b524fa25eee927e99935
-timeCreated: 1510450213
+timeCreated: 1510513865
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,7 @@ TextureImporter:
     21300010: spritesheet_jumper_5
     21300012: spritesheet_jumper_6
     21300014: spritesheet_jumper_7
+    21300016: spritesheet_jumper_8
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -202,6 +203,20 @@ TextureImporter:
         height: 93
       alignment: 7
       pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_jumper_8
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1190
+        width: 119
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
