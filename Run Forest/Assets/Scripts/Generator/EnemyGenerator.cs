@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class EnemyGenerator : MonoBehaviour {
 
+	private float distance = 7;
+
 	public GameObject enemy1;
 	public GameObject enemy2;
 	public GameObject enemy3;
 	public GameObject enemy4;
 	public Transform generatorPoint;
-	public float distance;
 
 	private List<GameObject> enemyList;
 

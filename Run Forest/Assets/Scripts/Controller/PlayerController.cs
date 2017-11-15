@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour {
 	private Collider2D playerCollider;
 	private bool grounded, dead;
 	private float speed = 5;
-	private float jumpForce = 21;
-	private float aceleration = 0.002f;
+	private float jumpForce = 30;
+	private float aceleration = 0.003f;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour {
 		dead = Physics2D.IsTouchingLayers (playerCollider, deathMask);
 		playerBody.velocity = new Vector2(speed, playerBody.velocity.y);
 
-		if (dead) {
+		/*if (dead) {
 			// Stop game loop
 			Time.timeScale = 0;
 			print ("Game Over");
@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour {
 				Application.LoadLevel (0);
 				Time.timeScale = 1;
 			}
-		}
+		}*/
 		
 		if ((Input.GetKey (KeyCode.Space) || Input.GetMouseButtonDown (0)) && grounded) {
 			playerBody.velocity = new Vector2 (playerBody.velocity.x, jumpForce);
